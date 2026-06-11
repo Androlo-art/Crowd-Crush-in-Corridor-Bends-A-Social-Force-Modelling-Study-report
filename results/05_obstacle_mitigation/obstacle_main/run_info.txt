@@ -1,0 +1,20 @@
+OBSTACLE-MITIGATION study  2026-06-06T22:23:22
+python=3.9.6 platform=macOS-26.5.1-arm64-arm-64bit
+width=5.0 door=1.2 corner_r=0.25 V0=1.3 T_TOTAL=400.0 T_MIN=200.0 RES=0.25 domain=18.0x32.0 cell_timeout=600
+angles=[0, 45, 60, 90, 120, 135]
+lambdas=[12.0]
+seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+colcfgs (label : cols [(d_up,offset,D), ...]):
+  ctrl          : []
+  pillar_axis   : [(1.5, 0.0, 0.9)]
+  pillar_off    : [(1.5, 0.8, 0.9)]
+  pillar_off_far: [(2.2, 0.8, 0.9)]
+  pillar_big    : [(2.0, 0.8, 1.1)]
+  gate          : [(1.8, 1.0, 0.9), (1.8, -1.0, 0.9)]
+  gate_wide     : [(1.8, 1.25, 0.9), (1.8, -1.25, 0.9)]
+  gate_close    : [(1.2, 1.0, 0.8), (1.2, -1.0, 0.8)]
+exe=/Users/andre/FYP_work/Crowd-Dynamics-bend-angle-study/bend_bottleneck/sd_crunch_capacity_obs
+par=/Users/andre/FYP_work/Crowd-Dynamics-bend-angle-study/bend_bottleneck/sd_capacity.par
+field_root=/Users/andre/FYP_work/Crowd-Dynamics-bend-angle-study/results/bend_capacity_fields
+model: ScenarioID=6, chamfered corner r=0.25, Helbing column un-gated into ID6 (sd_lib_capacity_obs.c), purely physical (no FMM mask), InjurySwitch=5 soft-radius 0.6, StallKickEnable=0, controlled inflow lambda, door=1.2 m, steady window [200,400]s.
+wall_time=4266s

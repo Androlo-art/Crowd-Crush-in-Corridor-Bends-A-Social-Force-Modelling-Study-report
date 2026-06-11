@@ -1,0 +1,16 @@
+Faster-is-slower experiment - run record
+timestamp        : 20260601_185954
+velocities (m/s) : [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0]
+repetitions      : 20
+seeds            : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+total runs       : 400
+workers          : 16
+fixed params     : N0=200, DoorWidth=1.05, Kappa=3000, MaxSimTime=400.0, ScenarioID=0, backend=C exe sd_crunch_scenario (no recompile)
+command          : .venv/bin/python -u /tmp/run_fis20_par.py
+raw CSV          : /Users/andre/FYP_work/Crowd-Dynamics-bend-angle-study/results/faster_is_slower/fis_20260601_185954/raw_results.csv
+aggregated CSV   : /Users/andre/FYP_work/Crowd-Dynamics-bend-angle-study/results/faster_is_slower/fis_20260601_185954/aggregated.csv
+figure           : faster_is_slower_helbing2000.(png|pdf|svg)
+parallelism note : multiprocessing only changes wall-clock/order; each run is deterministic in (v0, seed), so results match a sequential run.
+Helbing source   : Helbing, Farkas & Vicsek, Nature 407:487-490 (2000), Fig.1 leaving time (N=200) and flow J/v0; values user-supplied/digitized.
+caveat           : door 1.05 m (Helbing 1.0 m); compare trend/shape, not absolute values.
+total wall time  : 260 s

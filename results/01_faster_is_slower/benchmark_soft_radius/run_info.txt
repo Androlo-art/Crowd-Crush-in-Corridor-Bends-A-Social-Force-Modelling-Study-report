@@ -1,0 +1,11 @@
+FINAL faster-is-slower run, DoorWidth=1.2 m
+timestamp=20260602_091737
+mode=soft_radius
+overrides={'InjurySwitch': 5, 'CasualtyForceScale': 1.0, 'CasualtyContactScale': 1.0, 'CasualtyFrictionScale': 1.0, 'CasualtyRadiusScale': 0.6}
+velocities=[0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0]
+repetitions=20 seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+N0=200 DoorWidth=1.2 Kappa=3000 MaxSimTime=400.0 ScenarioID=0
+agent diameter: uniform 0.5-0.7 m (Dmean=0.6) unchanged
+DoorTargetJitter: REMOVED from model
+command: FIS_MODE=soft_radius .venv/bin/python -u /tmp/run_fis_final_dw12.py
+wall_time_s=152

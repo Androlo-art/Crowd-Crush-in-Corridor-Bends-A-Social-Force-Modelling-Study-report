@@ -1,0 +1,9 @@
+# Python dependencies for the plotting and figure-regeneration scripts.
+# (The simulation core is C — see code/model/c_core/README.md.)
+numpy
+scipy
+matplotlib
+scikit-fmm        # imported as `skfmm`; fast-marching floor-field navigation
+
+# System (not pip): a C compiler (cc/clang) to build the simulation binaries,
+# and ffmpeg if you want to render simulation videos.

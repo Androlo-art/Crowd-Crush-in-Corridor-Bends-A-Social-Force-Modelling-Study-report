@@ -1,0 +1,13 @@
+name: thesis-crowd-bend
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - pip
+  - pip:
+      - scikit-fmm
+# System tools (install separately): a C compiler (cc/clang) for the simulation
+# binaries, and ffmpeg for optional video rendering.

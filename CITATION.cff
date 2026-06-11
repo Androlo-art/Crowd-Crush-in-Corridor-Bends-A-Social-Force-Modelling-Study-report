@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Public repository supporting the thesis below; please cite the thesis."
+title: "Crowd dynamics in bend-fed corridors: a social-force study of turn angle, exit width and obstacle mitigation"
+authors:
+  - family-names: "<SURNAME>"
+    given-names: "Andre"
+type: software
+year: 2026
+# TODO (author): confirm title / author / year; add institution and supervisor if desired.
+notes: >
+  Public repository supporting an MEng final-year thesis: thesis-specific analysis and
+  plotting code, processed results, report figures, provenance documentation and
+  representative videos, to support inspection and reproducibility of the reported
+  figures. Not a general-purpose crowd-simulation package. The simulation core is
+  third-party (Farkas–Helbing–Vicsek "panic" package) and is not relicensed or
+  redistributed here — see LICENSE_OR_NOTICE.md.
